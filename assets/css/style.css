@@ -27,3 +27,20 @@ h2 {
     margin-right: auto;
 
 }
+.btn-all {
+    display: inline-block;
+    font-size: 50px;
+    padding-top: 1rem;
+    padding: 1%;
+    font-weight: 600;
+}
+.btn-all:hover {
+    background-color: grey;
+    color: white;
+}
+.btn-all:active {
+    background-color: green;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
