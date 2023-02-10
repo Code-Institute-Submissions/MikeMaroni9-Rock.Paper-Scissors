@@ -79,3 +79,50 @@ h2 {
     font-size: 3rem;
     
 }
+
+/*Media Queries*/
+
+/*1800px Wide and Under*/
+@media screen and (max-width: 1915px) {
+    .ScoreArea {
+        margin-top: 4rem;
+        font-size: 2rem;
+        
+    }
+}
+
+/*1530px Wide and Under*/
+@media screen and (max-width: 1530px) {
+    .header {
+        margin-top: 5rem;
+        padding: 40px;
+        font-size: 4rem;
+    }
+    .btn-all {
+        display: inline-block;
+        font-size: 30px;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+}
+
+/*950px Wide and Under*/
+@media screen and (max-width: 950px) {
+    .header {
+        margin-top: 5rem;
+        padding: 40px;
+        font-size: 2rem;
+    }
+    .btn-all {
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+    .mainHeader {
+        font-size: 2rem;
+    }
+    .welcome {
+        font-size: 1rem;
+    }
+}
