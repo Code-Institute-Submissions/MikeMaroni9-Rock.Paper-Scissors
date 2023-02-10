@@ -50,3 +50,23 @@ function pickPaper(){
 	var pcRandomChoice=randomChoice();
 	checkWinner(pcRandomChoice,"PAPER");
 }
+
+/**
+ * IF/ELSE Function... Checking who wins! 
+ */
+
+function checkWinner(pcRandomChoice,playersChoice){
+	if(pcRandomChoice==playersChoice){
+		TIE
+	}
+	else if(
+		(pcRandomChoice=="SCISSORS" && playersChoice=="PAPER") ||
+		(pcRandomChoice=="PAPER" && playersChoice=="ROCK") ||
+		(pcRandomChoice=="ROCK" && playersChoice=="scissors")
+		){
+		COMPUTER WINS
+	}
+	else{
+		PLAYER WINS
+	}
+}
