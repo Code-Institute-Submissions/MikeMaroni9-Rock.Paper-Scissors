@@ -17,9 +17,16 @@
             Rock,Paper, Scissors ! 
         </h1>
     </div>
-<h2 class="mainHeader">Come on in, join the fun ! </h2>
+<h2 class="mainHeader"><i class="fa-brands fa-square-js"></i>Come on in, join the fun ! </h2>
 
-<p class="welcome"> Welcome, Good Luck! </p>
+<p class="welcome">" Welcome, <span id="name-result"></span> ! Good luck!"  </p>
+    <form id="yourName" method="POST" action="/thankyou/">
+    <div class="name">
+    <label for="name">Enter your name :</label>
+    <input id="name" type="text" name="name" required>
+    </div>
+    <input type="submit">
+    </form>
 
 
 <div class="game-area">

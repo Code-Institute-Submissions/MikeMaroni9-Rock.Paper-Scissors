@@ -18,7 +18,15 @@ h2 {
     font-size: 3rem;
 }
 
+.welcome {
+    font-size: 4rem;
+}
+#yourName {
+    padding-bottom: 5rem;
+}
+
 .game-area {
+    padding-top: 10px;
     background-color: grey;
     box-sizing: border-box;
     width: 30%;
@@ -30,8 +38,7 @@ h2 {
 .btn-all {
     display: inline-block;
     font-size: 50px;
-    padding-top: 1rem;
-    padding: 1%;
+    margin-top: 5rem;
     font-weight: 600;
 }
 .btn-all:hover {
@@ -43,4 +50,3 @@ h2 {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
-
