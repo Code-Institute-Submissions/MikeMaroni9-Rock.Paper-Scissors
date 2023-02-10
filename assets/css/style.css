@@ -1,3 +1,4 @@
+/* MAIN BODY SEGMENT */
 body { 
     background-image: url(../images/background.png);
     background-repeat: no-repeat;
@@ -9,15 +10,18 @@ body {
     font-family: 'Libre Baskerville', sans-serif;
 }
 
+/* HEADER STYLE */
 .header {
     padding: 40px;
     font-size: 8rem;
 }
 
+/* HEADING LVL 2 STYLE */
 h2 {
     font-size: 3rem;
 }
 
+/* FORM STYLE */
 .welcome {
     font-size: 4rem;
 }
@@ -26,6 +30,7 @@ h2 {
     font-size: 1.5rem;
 }
 
+/* GAME AREA STYLE */
 .game-area {
     padding-top: 10px;
     background-color: grey;
@@ -34,8 +39,9 @@ h2 {
     height: 40rem;
     margin-left: auto;
     margin-right: auto;
-
 }
+
+/* BUTTON STYLE */
 .btn-all {
     display: inline-block;
     font-size: 50px;
@@ -52,6 +58,7 @@ h2 {
     transform: translateY(4px);
 }
 
+/* SCORE BOARD STYLING */
 .wins {
     color: green;
     font-weight: 800;
