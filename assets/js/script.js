@@ -10,6 +10,8 @@ document.getElementById("PAPER").onclick=pickPaper;
 document.getElementById("SCISSORS").onclick=pickScissors;
 document.getElementById('yourName');
 yourName.addEventListener('submit', getFormDetails);
+var botScore=0;
+var playerScore=0;
 
 function getFormDetails(event) {
     this.style['display'] = 'none';
@@ -54,19 +56,54 @@ function pickPaper(){
 /**
  * IF/ELSE Function... Checking who wins! 
  */
-
+// check to see who won and displays if there was a tie
 function checkWinner(pcRandomChoice,playersChoice){
 	if(pcRandomChoice==playersChoice){
-		TIE
+		displayPlayersChoice("Your Choice : " + playersChoice);
+		displayPcChoice("PC Choice : " + pcRandomChoice);
+		displayCompleteMessage("IT'S A TIE !");
 	}
 	else if(
 		(pcRandomChoice=="SCISSORS" && playersChoice=="PAPER") ||
 		(pcRandomChoice=="PAPER" && playersChoice=="ROCK") ||
 		(pcRandomChoice=="ROCK" && playersChoice=="scissors")
 		){
-		COMPUTER WINS
+		displayPlayersChoice("Your Choice : " + playersChoice);
+		displayPcChoice("PC Choice : " + pcRandomChoice);
+		increasePcScore();
 	}
 	else{
-		PLAYER WINS
+		displayPlayersChoice("Your Choice : " + playersChoice);
+		displayPcChoice("PC choice : " + pcRandomChoice);
+		increasePlayerScore();
 	}
+}
+/**
+ * Scores
+ */
+// 
+
+function increasePcScore(){
+	botScore+=1;
+	document.getElementById("computerScore").innerHTML=botScore;
+	displayCompleteMessage("YOU LOST :(");
+}
+
+function increasePlayerScore(){
+	playerScore+=1;
+	document.getElementById("humanScore").innerHTML=playerScore;
+	displayCompleteMessage("YOU WON !");
+}
+
+function displayCompleteMessage(msg){
+	document.getElementById("status").innerHTML=msg;
+}
+
+function displayPlayersChoice(msg){
+	document.getElementById("playerScore").innerHTML=msg;
+
+}
+
+function displayPcChoice(msg){
+	document.getElementById("botScore").innerHTML=msg;
 }

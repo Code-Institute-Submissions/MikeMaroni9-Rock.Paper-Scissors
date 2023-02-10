@@ -37,13 +37,20 @@
     <button id="ROCK" class="btn-all"><i class="fa-sharp fa-solid fa-hand-fist"></i>ROCK</button>
     <button id="PAPER" class="btn-all"><i class="fa-solid fa-toilet-paper"></i>PAPER</button>
     <button id="SCISSORS" class="btn-all"><i class="fa-sharp fa-solid fa-scissors"></i>SCISSORS</button>
+ 
+    <!--SCORE TEXT AREA -->   
+    <div class="ScoreArea">
+        <div id="playerScore"></div>
+        <div id="botScore"></div>
+        <div id="status"></div>
+    </div>
 </div>
 
 <!--GAME SCORE AREA-->
 <div>
     <h2 class="score">Score:</h2>
-    <p class="wins">Wins: </p>
-    <p class="looses">Looses: </p>
+    <p class="wins"> Wins: <span id="humanScore">0</span></p>
+    <p class="looses"> Looses: <span id="computerScore">0</span></p>
 </div>
 
     <script src="assets/js/script.js"></script>
