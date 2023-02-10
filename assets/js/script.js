@@ -13,6 +13,7 @@ yourName.addEventListener('submit', getFormDetails);
 var botScore=0;
 var playerScore=0;
 
+
 function getFormDetails(event) {
     this.style['display'] = 'none';
     event.preventDefault(); 
@@ -78,6 +79,8 @@ function checkWinner(pcRandomChoice,playersChoice){
 		increasePlayerScore();
 	}
 }
+
+
 /**
  * Scores
  */
